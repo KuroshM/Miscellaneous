@@ -7,16 +7,18 @@
     <title>Document</title>
   </head>
   <body>
-    <a
-      href="javascript:(function(){const script = document.createElement('script');script.src='https://kuroshm.github.io/Miscellaneous/ImgChanger.js';document.body.appendChild(script);})()"
-    >
-      ImgChanger
-    </a>
-    <br />
-    <a
-      href="javascript:(function(){const script = document.createElement('script');script.src='https://kuroshm.github.io/Miscellaneous/FontRandomizer.js';document.body.appendChild(script);})()"
-    >
-      FontRandomizer
-    </a>
+    <div>
+      <span>Select One Image</span>
+      <input id="imgInp" accept="image/*" type="file" />
+    </div>
+    <div>
+      <span>Select Many Image</span>
+      <input id="imgsInp" accept="image/*" type="file" multiple />
+    </div>
+    <div>
+      <span>Select Folder</span>
+      <input id="dirInp" type="file" webkitdirectory />
+    </div>
   </body>
+  <script src="main.js"></script>
 </html>
